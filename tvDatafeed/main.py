@@ -300,7 +300,7 @@ class TvDatafeed:
             resp.raise_for_status()
 
             # As of v3, this returns a dict: {'symbols_remaining':<int>, 'symbols': [...]}
-            symbols_list = json.loads(resp.text).get('symbols', [])
+            symbols_list = json.loads(resp.text.replace('</em>', '').replace('<em>', '')).get('symbols', [])
         except Exception as e:      # pylint: disable=broad-exception-caught
             logger.error(e)
 
