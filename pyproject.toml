@@ -1,12 +1,16 @@
 [project]
 name = "tvdatafeed"
-version = "0.1.0"
-description = "Add your description here"
+version = "2.1.1"
+description = "tvdatafeed modified by pasokata"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "jupyterlab>=4.4.7",
     "pandas>=2.3.2",
     "requests>=2.32.5",
+    "setuptools>=80.9.0",
     "websocket-client>=1.8.0",
 ]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

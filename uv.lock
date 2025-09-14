@@ -1350,12 +1350,13 @@ wheels = [
 
 [[package]]
 name = "tvdatafeed"
-version = "0.1.0"
-source = { virtual = "." }
+version = "2.1.1"
+source = { editable = "." }
 dependencies = [
     { name = "jupyterlab" },
     { name = "pandas" },
     { name = "requests" },
+    { name = "setuptools" },
     { name = "websocket-client" },
 ]
 
@@ -1364,6 +1365,7 @@ requires-dist = [
     { name = "jupyterlab", specifier = ">=4.4.7" },
     { name = "pandas", specifier = ">=2.3.2" },
     { name = "requests", specifier = ">=2.32.5" },
+    { name = "setuptools", specifier = ">=80.9.0" },
     { name = "websocket-client", specifier = ">=1.8.0" },
 ]
 

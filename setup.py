@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setup(
     name="tvdatafeed",
-    version="2.1.0",
+    version="2.1.1",
     packages=["tvDatafeed"],
-    url="https://github.com/rongardF/tvdatafeed/",
+    url="https://github.com/pasokata/tvdatafeed/",
     project_urls={
         "YouTube": "https://youtube.com/StreamAlpha?sub_confirmation=1",
         "Funding": "https://www.buymeacoffee.com/StreamAlpha",
@@ -21,10 +21,4 @@ setup(
     description="TradingView historical data downloader",
     long_description_content_type="text/markdown",
     long_description=long_description,
-    install_requires=[
-        "setuptools",
-        "pandas",
-        "websocket-client",
-        "requests"
-    ],
 )
